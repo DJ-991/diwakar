@@ -3,7 +3,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand"> Dashboard </a>
-    <button
+    <!-- <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
@@ -13,7 +13,7 @@
       aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
-    </button>
+    </button> -->
     <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
       <form class="d-flex" *ngIf="getDataFromLocalStorage.length > 1">
         <input
@@ -115,9 +115,7 @@
         >
           <div *ngIf="clickedTabId == view.id">
             <div class="card">
-              <div class="card-header">
-               Type: {{ view.layoutName }}
-              </div>
+              <div class="card-header">Type: {{ view.layoutName }}</div>
               <div class="row">
                 <ng-container
                   *ngIf="
