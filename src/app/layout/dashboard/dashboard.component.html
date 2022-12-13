@@ -3,17 +3,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand"> Dashboard </a>
-    <!-- <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarScroll"
-      aria-controls="navbarScroll"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button> -->
+
     <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
       <form class="d-flex" *ngIf="getDataFromLocalStorage.length > 1">
         <input
@@ -48,7 +38,7 @@
         <button
           type="button"
           class="btn btn-primary"
-          [disabled]="getDataFromLocalStorage.length == 1"
+          [disabled]="getDataFromLocalStorage.length == 10"
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
           (click)="createnew()"
